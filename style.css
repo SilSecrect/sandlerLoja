@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(52, 146, 146);
+}
+header img{
+    height: 90px;
+    margin-top: 20px;
+}
+
+.nome-logo{
+    margin-top: 40px;
+}
+.nome-logo h3{
+    font-size: 60px;
+    color: rgb(52, 146, 146);
+
+}
+.nome-logo h5{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+}  
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background-color: rgb(56, 146, 146);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.title{
+    margin-bottom: 40px;
+    height: 40px;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: space-between;
+}
+.title h5{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    text-transform: uppercase;
+    color: rgb(52, 146, 146);
+}
+.button{
+    width: 50px;
+    border: none;
+}
+.button i {
+    color: rgb(52, 146, 146);
+}
+ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 10px;
+    margin-left: 55px;
+   
+}
+.nav-item{
+    text-decoration: none;
+    margin: 5px;
+    margin-top: 50px; 
+    font-size: 20px;
+    color: beige;
+    text-transform: uppercase;
+}
+.icon{
+    color: aliceblue;
+    margin-top: 45px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.nav-item:hover{
+    background-color: rgba(240, 248, 255, 0.432);
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #ffff;
+    border-bottom: 2px solid #ccc;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Vamos preparar o slider */
+.slideshow-container {
+    margin: 10px 10px;
+    position: relative;
+    width: 600px;  
+    
+  }
+  /* image style */
+  .fade img{
+    height: 320px;
+    width: 600px;
+    border-radius: 20px;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next{
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height:250px;
+    width: 80px;
+    text-align: center;
+    color: #0e0d0d;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 40%, rgb(52, 146, 146) 150%);
+    transition: all 600ms ease-in-out;
+  } 
+  /* Position the "next button" to the right */
+  .next {
+    background: linear-gradient(to right, transparent 40%, rgb(52, 146, 146) 150%);
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #0f0f0f;
+    font-size: 22px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dott{
+    position: absolute;
+    top: 450px;
+    left: 770px;
+
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #f0ebeb85;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color:rgb(52, 146, 146);
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  /* Vamos para o catalogo */
+
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content-product {
+    border: 1px solid rgb(52, 146, 146);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .content-product img{
+    height: 190px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  .btn-button{
+    padding: 12px 16px;
+    border: none;
+    background-color: rgb(52, 146, 146);
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: rgb(52, 146, 146);
+    color: white;
+  }
+
+
+  /* Começa o footer */
+
+  footer{
+    width: 100%;
+    background-color: rgb(52, 146, 146);
+     
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
+  .roda-pe{
+    display: flex;
+    justify-content: space-between;
+
+  }
+   .footer-logo h3{
+    font-size: 40px;
+    color: rgb(242, 247, 247);  
+    
+    margin-left: 30px;
+}
+
+.location{
+    margin-top: 10px;
+    margin-right: 30px;
+    color: #ffff;
+}
+.location li{
+    list-style: none;
+    padding: 6px;
+}
+
+
+
+footer .footer-logo h5{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+} 
+
+.rede-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+    padding: 10px 0px ;
+    text-decoration: none;
+    
+}
+.rede-social a i{
+    margin-left: 10px;
+    font-size: 20px;
+}
