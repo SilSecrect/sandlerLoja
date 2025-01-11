@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style0.css">
-    <title> Loja 𝕊𝕒𝕟𝕕𝕝𝕖𝕣</title>
+    <title>Sil Secrect</title>
 </head>
 <body>
     <style>
@@ -22,18 +22,13 @@
             width: 560px;
             border-radius: 20px;
             }
-      
-       
         .numbertext {          
             font-size: 15px;     
         }
-        
-        /* The dots/bullets/indicators */
         .dott{
             display: none;
 
         }
-        /* == bloco card == */
         .main {
             max-width: 700px;
             margin: auto;
@@ -152,9 +147,6 @@
                 height: 60px;
             }
         }
-        /* ======== ao index resposivo ======= */
-
-    /* ====== comecar responsivo do login ===== */
             @media screen and (max-width:770px){
                 .modall-content{
                 width: 40vw;
@@ -238,17 +230,14 @@
                 
                 width:90%;
                 }
-
         }
-
-
     </style>
         <header>
             <div>
                 <img src="img/logo.png" title="Sandler">
             </div>
             <div class="nome-logo">
-                <h3>𝕊𝕒𝕟𝕕𝕝𝕖𝕣</h3>
+                <h3>Sil Secrect</h3>
             </div>
         </header>     
             <div id="mySidenav" class="sidenav">
@@ -267,8 +256,7 @@
                 
             </div>
              <section class="content">
-                <section>
-    
+                <section> 
                     <div id="myBtnContainer">
                         <button class="btn active" onclick="filterSelection('todos')">Todos</button>
                         <button class="btn" onclick="filterSelection('lentes')"> Lentes</button>
@@ -343,20 +331,17 @@
             <p>Lorem ipsum dolor..</p>
           </div>
         </div>
-        
-      <!-- END GRID -->
+
       </div>
-      
-      <!-- END MAIN -->
+  
       </div>
 </section>
 <script src="script.js"></script>
     </head>
     <body>
 
-    <!-- The Modal -->
+
     <div id="myModal" class="modal">
-      <!-- Modal content -->
       <div class="modal-content">
             <span class="close">&times;</span>
         <section class="item-modal ">
@@ -378,36 +363,25 @@
     </div>   
     
     <script>
-    // Get the modal
     var modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
-    
-    // Get the <span> element that closes the modal
+
     var span = document.getElementsByClassName("close")[0];
     
-    // When the user clicks the button, open the modal 
     btn.onclick = function() {
       modal.style.display = "block";
     }
-    
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
     }
     
-    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
       if (event.target == modal) {
         modal.style.display = "none";
       }
     }
     </script>
-
-    <!-- ======= meu ccadastro ao cliente ======= -->
-   
-
+        
     <div class="modall" id="modall">
         <div class="modall-content">
             <form class="item-modal" id="form">
@@ -439,24 +413,22 @@ function abrir(){
    const modal = document.getElementById("modall");
    modal.classList.add('active');
    }
-   
-   
+    
    function fecha(){
      const modal = document.getElementById("modall");
      modal.classList.remove('active');
     }
-
     </script>
 
 <footer>
     <div class="roda-pe">
         <div class="footer-logo">
-            <h3>𝕊𝕒𝕟𝕕𝕝𝕖𝕣</h3>
+            <h3>Sil Secrect</h3>
         </div>
         <div class="location">
-            <li>Jardim do Valle </li>
-            <li> Vigia - Pará </li>
-            <p>Fazemos entregas somente em Vigia! <i class="fa-solid fa-location-dot"></i></p>
+            <li>Florianópolis</li>
+            <li> Santa Catarina</li>
+            <p><i class="fa-solid fa-location-dot"></i></p>
         </div>
     </div>
    
